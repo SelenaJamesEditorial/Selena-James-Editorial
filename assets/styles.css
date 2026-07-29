@@ -1,10 +1,10 @@
 
 :root{
-  --ink:#33251F;--ink-soft:#66544C;--forest:#5A84AC;--forest-2:#742F14;
-  --cream:#F1E6E0;--paper:#FCFAF7;--sage:#C7AC9F;--line:#D8CCC6;--white:#fff;
-  --gold:#FC9C44;--cocoa:#5C3C2C;--rust:#742F14;--blue:#5A84AC;
+  --ink:#2B1730;--ink-soft:#5E4A61;--forest:#074E67;--forest-2:#05878A;
+  --cream:#F4EFF4;--paper:#FCFAFC;--sage:#E9DCEB;--line:#D8C8DB;--white:#fff;
+  --gold:#DD9933;--plum:#5A175D;--berry:#67074A;--teal:#05878A;--deep-teal:#074E67;
   --serif:"Libre Baskerville",Georgia,serif;--sans:"Manrope",Arial,sans-serif;
-  --shell:1180px;--shadow:0 24px 70px rgba(92,60,44,.13)
+  --shell:1180px;--shadow:0 24px 70px rgba(7,78,103,.14)
 }
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.72}
 a{color:inherit}h1,h2,h3{font-family:var(--serif);line-height:1.13;margin:0 0 1rem}h1{font-size:clamp(3.1rem,7vw,6.5rem);letter-spacing:-.055em}h2{font-size:clamp(2.15rem,4.5vw,4rem);letter-spacing:-.04em}h3{font-size:1.4rem}p{margin:0 0 1.2rem}ul,ol{margin-top:0}.shell{width:min(calc(100% - 42px),var(--shell));margin:auto}.section{padding:110px 0}.skip-link{position:absolute;left:-9999px;top:8px;z-index:999;background:#fff;padding:.7rem 1rem}.skip-link:focus{left:8px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
@@ -24,20 +24,19 @@ a{color:inherit}h1,h2,h3{font-family:var(--serif);line-height:1.13;margin:0 0 1r
 @media(max-width:980px){.hero-layout,.page-hero-grid,.philosophy-home-grid,.service-detail-grid,.specialty-grid,.narrative-grid,.principles-grid,.contact-layout{grid-template-columns:1fr;gap:38px}.credential-panel{max-width:520px}.editorial-cards,.comparison-table-wrap{grid-template-columns:1fr}.book-grid,.large-book-grid{grid-template-columns:repeat(2,1fr)}.portfolio-list-grid{grid-template-columns:1fr}.recognition-grid{grid-template-columns:1fr}.sticky-card{position:static}.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){body{font-size:16px}.section{padding:76px 0}.editorial-hero{padding-top:78px}.hero-layout{padding-bottom:70px}.menu-toggle{display:block}.primary-nav{display:none;position:absolute;top:82px;left:0;right:0;background:var(--paper);padding:1rem 21px 1.3rem;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:.2rem}.primary-nav.open{display:flex}.primary-nav a{padding:.65rem 0}.nav-button{border:0;padding:.65rem 0}.brand-name{font-size:.88rem}.statement-grid{grid-template-columns:1fr}.section-index{margin-bottom:0}.section-topline{align-items:flex-start;flex-direction:column}.book-grid,.large-book-grid{grid-template-columns:1fr}.book-tile{min-height:330px}.process-list li{grid-template-columns:55px 1fr}.portfolio-list-grid{gap:40px}.project-list li{grid-template-columns:1fr;gap:.2rem}.project-list span{text-align:left}.form-grid.two-col{grid-template-columns:1fr}.premium-form{padding:1.35rem}.footer-grid{grid-template-columns:1fr}.copyright{grid-column:auto}.hero-marquee{justify-content:flex-start}}
 
-
 /* =========================================================
-   Cocoa Topaz Noonday color theme
+   Teal, Plum & Gold color theme
    Palette:
-   Slate blue  #5A84AC
-   Cocoa       #5C3C2C
-   Rust        #742F14
-   Rose taupe  #C7AC9F
-   Topaz       #FC9C44
+   Bright teal  #05878A
+   Deep teal    #074E67
+   Plum         #5A175D
+   Berry        #67074A
+   Gold         #DD9933
    ========================================================= */
 
-/* Slate-blue header */
+/* Header */
 .site-header{
-  background:rgba(90,132,172,.97);
+  background:rgba(7,78,103,.97);
   border-bottom-color:rgba(255,255,255,.18);
 }
 .site-header .brand-name,
@@ -45,7 +44,7 @@ a{color:inherit}h1,h2,h3{font-family:var(--serif);line-height:1.13;margin:0 0 1r
   color:var(--white);
 }
 .site-header .brand-monogram{
-  background:var(--cocoa);
+  background:var(--plum);
   color:var(--white);
 }
 .site-header .primary-nav a:hover{
@@ -54,20 +53,20 @@ a{color:inherit}h1,h2,h3{font-family:var(--serif);line-height:1.13;margin:0 0 1r
 .site-header .nav-button{
   background:var(--gold);
   border-color:var(--gold);
-  color:var(--cocoa);
+  color:var(--deep-teal);
 }
 .site-header .nav-button:hover{
   background:var(--white);
   border-color:var(--white);
-  color:var(--cocoa);
+  color:var(--plum);
 }
 .site-header .menu-toggle span:not(.sr-only){
   background:var(--white);
 }
 
-/* Warm ivory and taupe section rhythm */
+/* Background rhythm */
 .editorial-hero{
-  background:linear-gradient(180deg,#FCFAF7 0%,#F5ECE7 100%);
+  background:linear-gradient(180deg,#FCFAFC 0%,#F5F0F6 100%);
 }
 .service-preview,
 .page-hero,
@@ -77,34 +76,34 @@ a{color:inherit}h1,h2,h3{font-family:var(--serif);line-height:1.13;margin:0 0 1r
 .process-section,
 .muted-section,
 .contact-main{
-  background:#EFE3DD;
+  background:#F0E7F1;
 }
 .sidebar-card{
-  background:#F1E6E0;
+  background:#F4EFF4;
 }
 
-/* Cocoa typography and slate-blue structure */
+/* Typography and accents */
 h1,h2,h3{
-  color:var(--cocoa);
+  color:var(--plum);
 }
 .kicker,
 .card-number,
 .process-list li > span,
 .principle-list article > span,
 .accent-question{
-  color:var(--rust);
+  color:var(--berry);
 }
 .button-primary{
-  background:var(--blue);
+  background:var(--deep-teal);
   color:var(--white);
 }
 .button-primary:hover{
   background:var(--gold);
-  color:var(--cocoa);
+  color:var(--deep-teal);
 }
 .button-cream{
   background:var(--paper);
-  color:var(--blue);
+  color:var(--deep-teal);
 }
 .text-link,
 .editorial-card a,
@@ -113,17 +112,17 @@ h1,h2,h3{
 }
 .text-link:hover,
 .editorial-card a:hover{
-  color:var(--rust);
+  color:var(--berry);
 }
 
-/* Slate-blue feature panels */
+/* Feature panels */
 .credential-panel,
 .hero-marquee,
 .philosophy-band,
 .cta-section,
 .recognition-section,
 .sticky-card{
-  background:var(--blue);
+  background:var(--deep-teal);
 }
 .credential-panel h1,
 .credential-panel h2,
@@ -145,12 +144,12 @@ h1,h2,h3{
 .panel-label,
 .kicker-light,
 .sticky-card .kicker{
-  color:#F6D5C1;
+  color:#F2D8A7;
 }
 .credential-copy,
 .philosophy-home-grid>div:last-child p,
 .small-note{
-  color:#F8EFEA;
+  color:#E5F4F4;
 }
 .hero-marquee{
   color:var(--white);
@@ -159,27 +158,23 @@ h1,h2,h3{
   color:var(--gold);
 }
 
-/* Warm accent details */
+/* Interactive emphasis */
+.field input:focus,
+.field select:focus,
+.field textarea:focus{
+  border-color:var(--teal);
+  outline-color:rgba(5,135,138,.22);
+}
 .nav-button,
-.field input:focus,
-.field select:focus,
-.field textarea:focus{
-  border-color:var(--gold);
-}
-.field input:focus,
-.field select:focus,
-.field textarea:focus{
-  outline-color:rgba(252,156,68,.23);
-}
-.book-role,
-.portfolio-note,
-.field-note{
-  color:inherit;
+.button-primary,
+.text-link,
+.editorial-card a{
+  transition:background-color .2s ease,color .2s ease,border-color .2s ease;
 }
 
-/* Slate-blue footer to bookend the site */
+/* Footer */
 .site-footer{
-  background:var(--blue);
+  background:var(--deep-teal);
   color:var(--white);
 }
 .site-footer .brand-monogram{
@@ -194,7 +189,7 @@ h1,h2,h3{
 .footer-brand-block p,
 .footer-heading,
 .copyright{
-  color:#F7ECE6;
+  color:#E5F4F4;
 }
 .site-footer a:hover{
   color:var(--gold);
@@ -203,10 +198,10 @@ h1,h2,h3{
   border-top-color:rgba(255,255,255,.22);
 }
 
-/* Mobile navigation keeps the slate-blue identity */
+/* Mobile navigation */
 @media(max-width:760px){
   .primary-nav{
-    background:var(--blue);
+    background:var(--deep-teal);
     border-bottom-color:rgba(255,255,255,.18);
   }
   .primary-nav .nav-button{
