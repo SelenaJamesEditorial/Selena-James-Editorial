@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Submit a manuscript inquiry for developmental editing, an editorial assessment, or a strategy session.">
+  <meta name="theme-color" content="#17352d">
+  <title>Contact | Selena James Editorial</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  
+  <script defer src="assets/script.js"></script>
+</head>
+<body class="contact-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="index.html" aria-label="Selena James Editorial home">
+      <span class="brand-monogram" aria-hidden="true">SJ</span>
+      <span class="brand-name">Selena James Editorial</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span class="sr-only">Open navigation</span>
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a class="nav-button" href="contact.html">Start an Inquiry</a>
+    </nav>
+  </div>
+</header>
+
+  <main id="main">
+    
+<section class="page-hero contact-hero">
+  <div class="shell page-hero-grid">
+    <div><p class="kicker">Contact</p><h1>Tell me about your manuscript.</h1></div>
+    <p class="page-hero-deck">Share enough information for me to understand the project, where you are in the process, and what kind of editorial support you are looking for.</p>
+  </div>
+</section>
+<section class="section contact-main">
+  <div class="shell contact-layout">
+    <aside class="contact-guidance">
+      <div class="sticky-card">
+        <p class="kicker">What to send</p>
+        <ol>
+          <li><span>01</span><p>Genre and approximate word count</p></li>
+          <li><span>02</span><p>A brief project description or synopsis</p></li>
+          <li><span>03</span><p>Where you are in the writing or revision process</p></li>
+          <li><span>04</span><p>The questions or concerns you want to address</p></li>
+          <li><span>05</span><p>A shareable link to the first three chapters or approximately fifty pages</p></li>
+          <li><span>06</span><p>A shareable outline or synopsis, when available</p></li>
+        </ol>
+        <p class="small-note">Use Google Drive, Dropbox, or OneDrive links with viewing permission enabled. Please do not send a full manuscript until requested.</p>
+      </div>
+    </aside>
+
+    <form class="premium-form reveal" action="https://formspree.io/f/REPLACE_WITH_FORM_ID" method="POST">
+      <input type="hidden" name="_subject" value="New Selena James Editorial manuscript inquiry">
+      <input class="honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+
+      <fieldset>
+        <legend>Contact information</legend>
+        <div class="form-grid two-col">
+          <div class="field"><label for="name">Name <span>*</span></label><input id="name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="email">Email <span>*</span></label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>About the manuscript</legend>
+        <div class="form-grid two-col">
+          <div class="field"><label for="title">Working title</label><input id="title" name="working_title"></div>
+          <div class="field"><label for="genre">Genre <span>*</span></label><input id="genre" name="genre" placeholder="Romance, horror, book club fiction…" required></div>
+          <div class="field"><label for="word-count">Approximate word count <span>*</span></label><input id="word-count" name="word_count" type="number" min="1" step="1000" placeholder="85000" required></div>
+          <div class="field"><label for="stage">Stage of the process <span>*</span></label>
+            <select id="stage" name="stage" required>
+              <option value="">Select one</option><option>First draft complete</option><option>Revising independently</option><option>Preparing to query agents</option><option>Preparing to submit to publishers</option><option>Preparing to self-publish</option><option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="description">Brief project description <span>*</span></label><textarea id="description" name="project_description" rows="6" placeholder="Describe the story, central conflict, and intended readership." required></textarea></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>What you need</legend>
+        <div class="field"><label for="service">Service you are considering <span>*</span></label>
+          <select id="service" name="service" required>
+            <option value="">Select one</option><option>Developmental Edit</option><option>Editorial Assessment</option><option>Manuscript Strategy Session</option><option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="field"><label for="feedback">What would you like help with? <span>*</span></label><textarea id="feedback" name="feedback_requested" rows="6" placeholder="Describe the editorial questions, concerns, or revision challenges you want to address." required></textarea></div>
+        <div class="field"><label for="timing">Ideal timing</label><input id="timing" name="ideal_timing" placeholder="For example: September 2026 or flexible"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Materials</legend>
+        <div class="field"><label for="sample-link">Sample pages link</label><input id="sample-link" name="sample_pages_link" type="url" placeholder="https://"><p class="field-note">First three chapters or approximately fifty pages.</p></div>
+        <div class="field"><label for="outline-link">Synopsis or outline link</label><input id="outline-link" name="synopsis_outline_link" type="url" placeholder="https://"></div>
+      </fieldset>
+
+      <div class="consent-row"><input id="consent" name="consent" type="checkbox" required><label for="consent">I understand that submitting this form does not create an editor-client relationship or guarantee availability.</label></div>
+      <button class="button button-primary button-block" type="submit">Send Manuscript Inquiry</button>
+      <p class="privacy-note">Your information and materials will be used only to evaluate this inquiry and will not be shared.</p>
+      <div class="form-status" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+  </main>
+  
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div class="footer-brand-block">
+      <a class="brand brand-footer" href="index.html">
+        <span class="brand-monogram" aria-hidden="true">SJ</span>
+        <span class="brand-name">Selena James Editorial</span>
+      </a>
+      <p>Developmental editing and editorial guidance for fiction writers.</p>
+    </div>
+    <div>
+      <p class="footer-heading">Explore</p>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+    </div>
+    <div>
+      <p class="footer-heading">Work together</p>
+      <a href="developmental-edit.html">Developmental Edit</a>
+      <a href="editorial-assessment.html">Editorial Assessment</a>
+      <a href="strategy-session.html">Strategy Session</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="copyright">© <span data-year></span> Selena James Editorial. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
